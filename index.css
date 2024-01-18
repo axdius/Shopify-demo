@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.heading {
+    font-family: 'Inter', sans-serif;
+}
+
+.bg-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    width: 100vw;
+
+}
+ 
+.heading {
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 440px ) {
+    .heading {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 762px ) {
+    .heading {
+        font-size: 30px;
+    }
+}
+
+.tab-conatiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 80px;
+}
+
+@media screen and (max-width: 440px ) {
+    .tab-conatiner {
+        width: 400px;
+        height: 60px;
+    }
+}
+@media screen and (max-width: 762px ) {
+    .tab-conatiner {
+        width: 550px;
+        height: 60px;
+    }
+}
+@media screen and (min-width: 763px ) {
+    .tab-conatiner {
+        width: 762px;
+        height: 60px;
+    }
+}
+.tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    width: 300px;
+    background-color: antiquewhite;
+    height: 40px;
+    margin: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media screen and (max-width: 440px) {
+    .tab{
+        width: 100px;
+    }
+    
+}
+@media screen and (min-width: 763px) {
+    .tab{
+        width: 200px;
+    }
+    
+}
+.active {
+    background-color: black;
+    color: aliceblue;
+}
+
+.links ul li:hover,
+.links ul li.active{
+    color: white;
+    background-color: black;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    border-width: 2px;
+    border-color: black;
+}
+@media screen and (max-width: 440px ) {
+    .cards-container {
+        flex-direction: column;
+        width: 350px;
+    }
+}
+@media screen and (max-width: 762px ) {
+    .cards-container {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 600px;
+        margin-left: 20px;
+        height: auto;
+    }
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 400px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 440px) {
+    .card {
+        height: 380px;
+        width: 300px;
+        margin: 0;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 762px) {
+    .card {
+        height: 380px;
+        width: 250px;
+        margin: 0;
+        padding: 20px;
+        margin-bottom: 10px;
+        margin-right: 20px;
+    }
+}
+@media screen and (min-width: 763px) {
+    .card {
+        height: 380px;
+        width: 200px;
+        margin: 0;
+        padding: 20px;
+        margin-bottom: 10px;
+        margin-right: 20px;
+    }
+}
+.image-container {
+    background-size: cover;
+    height: 350px;
+    width: 200px;
+    border-radius: 10px;
+    margin-top: 0;
+    justify-content: flex-start;
+}
+@media screen and (max-width: 440px) {
+    .image-container{
+        height: 250px;
+        width: 160px;
+    }
+}
+@media screen and (max-width: 762px) {
+    .image-container{
+        height: 300px;
+        width: 160px;
+    }
+}
+@media screen and (min-width: 763px) {
+    .image-container{
+        height: 350px;
+        width: 150px;
+    }
+}
+.text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px;
+    font-size: 10px;
+    background-color: antiquewhite;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+}
+@media screen and (max-width: 440px) {
+    .text{
+        width: 60px;
+        font-size: 10px;
+    }
+}
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.outfit-type {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    align-self: flex-start;
+    padding-top: 10px;
+}
+.brand {
+    font-size: 14px;
+    padding-top: 8px;
+    margin-left: 10px;
+}
+.price-details{
+    font-size: 14px;
+    color: black;;
+}
+
+.cut-price {
+    text-decoration: line-through;
+    color: grey;
+    font-weight: 200;
+    padding-left: 10px;
+}
+
+.discount {
+    color: red;
+    padding-left: 10px;
+}
